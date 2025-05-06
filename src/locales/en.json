@@ -1,0 +1,29 @@
+{
+  "Home": {
+    "welcome": "Welcome!"
+  },
+  "Header": {
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  },
+  "Hero": {
+    "title": "Beğenç D. | Front End Developer",
+    "description": "A Front End Developer with over 2 years of experience. I build modern and user-friendly web applications."
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Contact": {
+    "title": "Contact",
+    "email": "Email: begench.d.2004@gmail.com",
+    "github": "GitHub: begencd",
+    "telegram": "Telegram: begencd",
+    "cv": "View My CV"
+  },
+  "LanguageSwitcher": {
+    "selectLanguage": "Select Language"
+  }
+}

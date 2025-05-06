@@ -1,0 +1,29 @@
+{
+    "Home": {
+      "welcome": "Добро пожаловать!"
+    },
+    "Header": {
+      "skills": "Навыки",
+      "contact": "Контакты"
+    },
+    "Footer": {
+      "rights": "Все права защищены."
+    },
+    "Hero": {
+      "title": "Бегенч Д. | Фронтенд разработчик",
+      "description": "Фронтенд разработчик с более чем 2 годами опыта. Создаю современные и удобные веб-приложения."
+    },
+    "Skills": {
+      "title": "Навыки"
+    },
+    "Contact": {
+      "title": "Контакты",
+      "email": "Электронная почта: begench.d.2004@gmail.com",
+      "github": "GitHub: begencd",
+      "telegram": "Telegram: begencd",
+      "cv": "Посмотреть мое резюме"
+    },
+    "LanguageSwitcher": {
+      "selectLanguage": "Выбрать язык"
+    }
+  }

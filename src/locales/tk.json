@@ -1,0 +1,29 @@
+{
+  "Home": {
+    "welcome": "Hoş Geldiňiz!"
+  },
+  "Header": {
+    "skills": "Başarnyklarym",
+    "contact": "Habarlaşmak üçin"
+  },
+  "Footer": {
+    "rights": "Ähli hukuklar goralan."
+  },
+  "Hero": {
+    "title": "Beğenç D. | Front End Developer",
+    "description": "Men 2+ ýyllyk tejribeli Front End Developer. Döwrebap we ulanyjy dosty web sahypaslaryny taýýarlaýaryn."
+  },
+  "Skills": {
+    "title": "Başarnyklarym"
+  },
+  "Contact": {
+    "title": "Habarlaşmak üçin",
+    "email": "E-posta: begench.d.2004@gmail.com",
+    "github": "GitHub: begencd",
+    "telegram": "Telegram: begencd",
+    "cv": "CV'mi görmek üçin"
+  },
+  "LanguageSwitcher": {
+    "selectLanguage": "Dil Saýla"
+  }
+}
