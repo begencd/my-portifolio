@@ -1,3 +1,4 @@
+"use client";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Mail, Github, Send } from "lucide-react";
@@ -26,7 +27,7 @@ export default function Contact() {
           <Send /> <a href="https://t.me/begencd">{t("telegram")}</a>
         </p>
         <motion.a
-          href="https://your-cv-url.com" // CV URL'sini buraya ekle
+          href="https://your-cv-url.com"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
