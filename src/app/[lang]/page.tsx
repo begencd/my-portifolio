@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Hero from "@/components/ui/Hero";
 import Skills from "@/components/ui/Skills";
+import Projects from "@/components/ui/Projects";
 import Contact from "@/components/ui/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     >
       <Hero />
       <Skills />
+      <Projects />
       <Contact />
     </motion.div>
   );

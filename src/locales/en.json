@@ -1,27 +1,39 @@
 {
   "Home": {
-    "welcome": "Welcome!"
+    "title": "Welcome to My Portfolio"
   },
   "Header": {
     "skills": "Skills",
-    "contact": "Contact"
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
   },
   "Footer": {
     "rights": "All rights reserved."
   },
   "Hero": {
-    "title": "Beğenç D. | Front End Developer",
-    "description": "A Front End Developer with over 2 years of experience. I build modern and user-friendly web applications."
+    "title": "Hi, I'm Beğenç D.",
+    "description": "A passionate Front End Developer with 2+ years of experience building modern web applications.",
+    "cta": "Get in Touch"
   },
   "Skills": {
-    "title": "Skills"
+    "title": "My Skills"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "viewProject": "View Project"
   },
   "Contact": {
-    "title": "Contact",
-    "email": "Email: begench.d.2004@gmail.com",
-    "github": "GitHub: begencd",
-    "telegram": "Telegram: begencd",
-    "cv": "View My CV"
+    "title": "Contact Me",
+    "email": "Email",
+    "github": "GitHub",
+    "telegram": "Telegram",
+    "cv": "Download CV",
+    "name": "Your Name",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
   },
   "LanguageSwitcher": {
     "selectLanguage": "Select Language"

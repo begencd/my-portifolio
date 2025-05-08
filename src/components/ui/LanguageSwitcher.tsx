@@ -1,27 +1,36 @@
-import { useRouter } from "next/navigation";
+"use client";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
   const router = useRouter();
-  const [locale, setLocale] = useState("tr");
+  const pathname = usePathname();
+  const currentLocale = pathname.split("/")[1] || "tk";
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setLocale(e.target.value);
-    router.push(`/${e.target.value}`);
+  const handleChange = (value: string) => {
+    const newPath = pathname.replace(/^\/[^\/]+/, `/${value}`);
+    router.push(newPath);
   };
 
   return (
-    <select
-      value={locale}
-      onChange={handleChange}
-      className="bg-transparent border-none"
-      aria-label={t("selectLanguage")}
-    >
-      <option value="tr">Türkçe</option>
-      <option value="en">English</option>
-      <option value="ru">Русский</option>
-    </select>
+    <Select value={currentLocale} onValueChange={handleChange}>
+      <SelectTrigger className="w-32">
+        <SelectValue placeholder={t("selectLanguage")} />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="tk">Türkmençe</SelectItem>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="ru">Русский</SelectItem>
+        <SelectItem value="tr">Türkçe</SelectItem>
+      </SelectContent>
+    </Select>
   );
 }

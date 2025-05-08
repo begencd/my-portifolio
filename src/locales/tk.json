@@ -1,27 +1,39 @@
 {
   "Home": {
-    "welcome": "Hoş Geldiňiz!"
+    "title": "Portfolimä Hoş Geldiňiz"
   },
   "Header": {
-    "skills": "Başarnyklarym",
-    "contact": "Habarlaşmak üçin"
+    "skills": "Ustalyklarym",
+    "projects": "Proýektler",
+    "contact": "Habarlaşyň",
+    "toggleMenu": "Menýu aç/ýap"
   },
   "Footer": {
-    "rights": "Ähli hukuklar goralan."
+    "rights": "Ähli hukular goragly."
   },
   "Hero": {
-    "title": "Beğenç D. | Front End Developer",
-    "description": "Men 2+ ýyllyk tejribeli Front End Developer. Döwrebap we ulanyjy dosty web sahypaslaryny taýýarlaýaryn."
+    "title": "Salam, Men Beğenç D.",
+    "description": "2+ ýyl tejribesi bolan, häzirki zaman web programmalaryny döredýän höwesli Front End Developer.",
+    "cta": "Habarlaşyň"
   },
   "Skills": {
-    "title": "Başarnyklarym"
+    "title": "Ustalyklarym"
+  },
+  "Projects": {
+    "title": "Proýektlerim",
+    "viewProject": "Proýekti Gör"
   },
   "Contact": {
-    "title": "Habarlaşmak üçin",
-    "email": "E-posta: begench.d.2004@gmail.com",
-    "github": "GitHub: begencd",
-    "telegram": "Telegram: begencd",
-    "cv": "CV'mi görmek üçin"
+    "title": "Men bilen Habarlaşyň",
+    "email": "E-poçta",
+    "github": "GitHub",
+    "telegram": "Telegram",
+    "cv": "CV Ýükle",
+    "name": "Adyňyz",
+    "message": "Habaryňyz",
+    "send": "Habar IBER",
+    "success": "Habar ugradyldy!",
+    "error": "Habar ibermek başa barmady. Gaýtadan synanyşyň."
   },
   "LanguageSwitcher": {
     "selectLanguage": "Dil Saýla"

@@ -2,13 +2,19 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 export const metadata = {
-  title: "Begenç D. | Front End Developer",
+  title: "Beğenç D. | Front End Developer",
   description:
     "Portfolio of Beğenç D., a Front End Developer with 2+ years of experience.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default async function RootLayout({
@@ -22,11 +28,15 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -5,7 +5,13 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  /* config options here */
+  reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com"],
+  },
+  experimental: {
+    optimizePackageImports: ["framer-motion", "lucide-react", "react-icons"],
+  },
 };
 
 export default withNextIntl(nextConfig);

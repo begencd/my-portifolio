@@ -1,0 +1,41 @@
+{
+  "Home": {
+    "title": "Portföyüme Hoş Geldiniz"
+  },
+  "Header": {
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "toggleMenu": "Menüyü aç/kapat"
+  },
+  "Footer": {
+    "rights": "Tüm hakları saklıdır."
+  },
+  "Hero": {
+    "title": "Merhaba, Ben Beğenç D.",
+    "description": "Modern web uygulamaları geliştiren, 2+ yıl deneyimli tutkulu bir Front End Geliştirici.",
+    "cta": "İletişime Geç"
+  },
+  "Skills": {
+    "title": "Yeteneklerim"
+  },
+  "Projects": {
+    "title": "Projelerim",
+    "viewProject": "Projeyi Görüntüle"
+  },
+  "Contact": {
+    "title": "Benimle İletişime Geç",
+    "email": "E-posta",
+    "github": "GitHub",
+    "telegram": "Telegram",
+    "cv": "CV İndir",
+    "name": "Adınız",
+    "message": "Mesajınız",
+    "send": "Mesaj Gönder",
+    "success": "Mesaj başarıyla gönderildi!",
+    "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin."
+  },
+  "LanguageSwitcher": {
+    "selectLanguage": "Dil Seç"
+  }
+}

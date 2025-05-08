@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import TechIcons from "@/components/icons/TechIcons";
+import SkillIcons from "@/components/icons/SkillIcons";
 
 export default function Skills() {
   const t = useTranslations("Skills");
@@ -12,11 +12,11 @@ export default function Skills() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl font-bold text-center mb-8"
+        className="text-4xl font-bold text-center mb-12"
       >
         {t("title")}
       </motion.h2>
-      <TechIcons />
+      <SkillIcons />
     </section>
   );
 }
