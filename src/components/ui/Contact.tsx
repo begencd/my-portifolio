@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import emailjs from "@emailjs/browser";
 import { SiGithub } from "react-icons/si";
 
 interface FormData {
@@ -40,14 +39,20 @@ export default function Contact() {
     }
 
     try {
-      await addDoc(collection(db, "contacts"), {
-        ...formData,
-        timestamp: new Date(),
-      });
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+      );
       setStatus(tForm("success"));
       setFormData({ name: "", email: "", message: "" });
     } catch (error: any) {
-      console.error("Firestore Hatası:", error.message);
+      console.error("EmailJS Hatası:", error.message);
       setStatus(`${tForm("error")} (${error.message})`);
     } finally {
       setIsLoading(false);
@@ -92,7 +97,7 @@ export default function Contact() {
             </a>
           </p>
           <motion.a
-            href="#"
+            href="https://your-cv-url.com"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
