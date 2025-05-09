@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   SiJavascript,
   SiTypescript,
@@ -16,7 +16,6 @@ import {
   SiAntdesign,
   SiSwiper,
   SiWebflow,
-  SiGithub,
 } from "react-icons/si";
 import { BookOpen, Code } from "lucide-react";
 
@@ -51,25 +50,78 @@ const skills = [
   { name: "HLS.js", icon: <Code size={32} /> },
   { name: "Framer Motion", icon: <Code size={32} /> },
   { name: "Shadcn UI", icon: <Code size={32} /> },
-  { name: "Git", icon: <SiGithub size={32} /> },
 ];
 
 export default function SkillIcons() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8, y: 20, rotate: -360 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotate: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+    hover: {
+      scale: 1.2,
+      y: -8,
+      rotate: 5,
+      boxShadow: "0 6px 20px rgba(139, 92, 246, 0.5)",
+      transition: { duration: 0.2, type: "spring", stiffness: 300 },
+    },
+    bounce: {
+      y: [-2, 2],
+      transition: {
+        y: {
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: Math.random() * 0.5, // Random delay for varied bounce
+        },
+      },
+    },
+  };
+
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
-      {skills.map((skill, index) => (
-        <motion.div
-          key={skill.name}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.05 }}
-          className="flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          whileHover={{ scale: 1.1 }}
-        >
-          <div className="text-primary mb-2">{skill.icon}</div>
-          <span className="text-sm font-medium">{skill.name}</span>
-        </motion.div>
-      ))}
-    </div>
+    <motion.div
+      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 max-w-6xl mx-auto"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <AnimatePresence>
+        {skills.map((skill) => (
+          <motion.div
+            key={skill.name}
+            className="flex flex-col items-center text-center p-4 rounded-lg bg-card hover:bg-accent/50 transition-colors"
+            variants={itemVariants}
+            initial="hidden"
+            animate={["visible"]}
+            whileHover="hover"
+            layout
+          >
+            <motion.div
+              className="mb-2"
+              whileHover={{ color: "rgb(147, 51, 234)" }} // Shift to --accent on hover
+              transition={{ duration: 0.2 }}
+            >
+              {skill.icon}
+            </motion.div>
+            <span className="text-sm font-medium">{skill.name}</span>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </motion.div>
   );
 }

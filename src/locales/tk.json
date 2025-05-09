@@ -4,7 +4,6 @@
   },
   "Header": {
     "skills": "Ustalyklarym",
-    "projects": "Proýektler",
     "contact": "Habarlaşyň",
     "toggleMenu": "Menýu aç/ýap"
   },
@@ -12,16 +11,12 @@
     "rights": "Ähli hukular goragly."
   },
   "Hero": {
-    "title": "Salam, Men Beğenç D.",
+    "title": "Salam, Men Begenç D.",
     "description": "2+ ýyl tejribesi bolan, häzirki zaman web programmalaryny döredýän höwesli Front End Developer.",
     "cta": "Habarlaşyň"
   },
   "Skills": {
     "title": "Ustalyklarym"
-  },
-  "Projects": {
-    "title": "Proýektlerim",
-    "viewProject": "Proýekti Gör"
   },
   "Contact": {
     "title": "Men bilen Habarlaşyň",

@@ -9,9 +9,9 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 export const metadata = {
-  title: "Beğenç D. | Front End Developer",
+  title: "Begenç D. | Front End Developer",
   description:
-    "Portfolio of Beğenç D., a Front End Developer with 2+ years of experience.",
+    "Portfolio of Begenç D., a Front End Developer with 2+ years of experience.",
   icons: {
     icon: "/favicon.ico",
   },

@@ -1,6 +1,6 @@
 "use client";
-import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { useTransition } from "react";
 import {
   Select,
   SelectContent,
@@ -8,28 +8,43 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const currentLocale = pathname.split("/")[1] || "tk";
+  const [isPending, startTransition] = useTransition();
 
-  const handleChange = (value: string) => {
-    const newPath = pathname.replace(/^\/[^\/]+/, `/${value}`);
-    router.push(newPath);
+  const languages = [
+    { code: "en", name: "English" },
+    { code: "tk", name: "Türkmen" },
+    { code: "ru", name: "Русский" },
+    { code: "tr", name: "Türkçe" },
+  ];
+
+  const handleLanguageChange = (newLocale: string) => {
+    startTransition(() => {
+      router.replace(pathname, { locale: newLocale });
+    });
   };
 
   return (
-    <Select value={currentLocale} onValueChange={handleChange}>
+    <Select
+      value={locale}
+      onValueChange={handleLanguageChange}
+      disabled={isPending}
+    >
       <SelectTrigger className="w-32">
         <SelectValue placeholder={t("selectLanguage")} />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="tk">Türkmençe</SelectItem>
-        <SelectItem value="en">English</SelectItem>
-        <SelectItem value="ru">Русский</SelectItem>
-        <SelectItem value="tr">Türkçe</SelectItem>
+        {languages.map((lang) => (
+          <SelectItem key={lang.code} value={lang.code}>
+            {lang.name}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );

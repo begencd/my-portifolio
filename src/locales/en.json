@@ -4,7 +4,6 @@
   },
   "Header": {
     "skills": "Skills",
-    "projects": "Projects",
     "contact": "Contact",
     "toggleMenu": "Toggle menu"
   },
@@ -12,16 +11,12 @@
     "rights": "All rights reserved."
   },
   "Hero": {
-    "title": "Hi, I'm Beğenç D.",
+    "title": "Hi, I'm Begenç D.",
     "description": "A passionate Front End Developer with 2+ years of experience building modern web applications.",
     "cta": "Get in Touch"
   },
   "Skills": {
     "title": "My Skills"
-  },
-  "Projects": {
-    "title": "My Projects",
-    "viewProject": "View Project"
   },
   "Contact": {
     "title": "Contact Me",

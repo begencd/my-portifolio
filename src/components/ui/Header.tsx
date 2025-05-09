@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
-import ThemeSwitcher from "./ThemeSwicher";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -13,7 +13,6 @@ export default function Header() {
 
   const navItems = [
     { href: "#skills", label: t("skills") },
-    { href: "#projects", label: t("projects") },
     { href: "#contact", label: t("contact") },
   ];
 
@@ -22,11 +21,11 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md z-50"
+      className="fixed top-0 w-full bg-card/80 dark:bg-card/80 backdrop-blur-md shadow-md z-50"
     >
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          Beğenç D.
+        <Link href="/" className="text-2xl font-bold text-primary">
+          Begenç D.
         </Link>
         <div className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
@@ -53,7 +52,7 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white dark:bg-black p-4"
+          className="md:hidden bg-card dark:bg-card p-4"
         >
           {navItems.map((item) => (
             <Link

@@ -4,7 +4,6 @@
   },
   "Header": {
     "skills": "Yetenekler",
-    "projects": "Projeler",
     "contact": "İletişim",
     "toggleMenu": "Menüyü aç/kapat"
   },
@@ -12,16 +11,12 @@
     "rights": "Tüm hakları saklıdır."
   },
   "Hero": {
-    "title": "Merhaba, Ben Beğenç D.",
+    "title": "Merhaba, Ben Begenç D.",
     "description": "Modern web uygulamaları geliştiren, 2+ yıl deneyimli tutkulu bir Front End Geliştirici.",
     "cta": "İletişime Geç"
   },
   "Skills": {
     "title": "Yeteneklerim"
-  },
-  "Projects": {
-    "title": "Projelerim",
-    "viewProject": "Projeyi Görüntüle"
   },
   "Contact": {
     "title": "Benimle İletişime Geç",
