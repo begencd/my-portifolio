@@ -30,6 +30,21 @@
     "success": "Habar ugradyldy!",
     "error": "Habar ibermek başa barmady. Gaýtadan synanyşyň."
   },
+  "ContactForm": {
+    "title": "Habarlaşmak",
+    "name": "At",
+    "name_placeholder": "Adyňyzy giriň",
+    "email": "E-poçta",
+    "email_placeholder": "E-poçtaňyzy giriň",
+    "message": "Hat",
+    "message_placeholder": "Hat giriň",
+    "send": "Iber",
+    "sending": "Iberilýär...",
+    "cv": "CV-ni gör",
+    "success": "Hatyňyz üstünlikli iberildi!",
+    "error": "Ýalňyşlyk: Hat ibermedi.",
+    "error_invalid_email": "Ýalňyşlyk: Dogry e-poçta adresini giriň."
+  },
   "LanguageSwitcher": {
     "selectLanguage": "Dil Saýla"
   }

@@ -30,6 +30,21 @@
     "success": "Mesaj başarıyla gönderildi!",
     "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin."
   },
+  "ContactForm": {
+    "title": "İletişime Geç",
+    "name": "İsim",
+    "name_placeholder": "İsminizi girin",
+    "email": "E-posta",
+    "email_placeholder": "E-postanızı girin",
+    "message": "Mesaj",
+    "message_placeholder": "Mesajınızı girin",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "cv": "CV’yi Görüntüle",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Hata: Mesaj gönderilemedi.",
+    "error_invalid_email": "Hata: Lütfen geçerli bir e-posta adresi girin."
+  },
   "LanguageSwitcher": {
     "selectLanguage": "Dil Seç"
   }
