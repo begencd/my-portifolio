@@ -3,15 +3,6 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
-const nextConfig: NextConfig = {
-  output: "standalone",
-  reactStrictMode: true,
-  images: {
-    domains: ["images.unsplash.com"],
-  },
-  experimental: {
-    optimizePackageImports: ["framer-motion", "lucide-react", "react-icons"],
-  },
-};
+const nextConfig: NextConfig = {};
 
 export default withNextIntl(nextConfig);
