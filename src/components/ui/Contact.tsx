@@ -1,14 +1,16 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { Mail, Send } from "lucide-react";
+import { Mail, Send, Eye, Download } from "lucide-react"; // Eye ve Download ikonları eklendi
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { SiGithub } from "react-icons/si";
+import { Link } from "@/i18n/routing"; // next-intl’in Link bileşeni
 
+// Form verileri için tip tanımı
 interface FormData {
   name: string;
   email: string;
@@ -18,6 +20,7 @@ interface FormData {
 export default function Contact() {
   const t = useTranslations("Contact");
   const tForm = useTranslations("ContactForm");
+  const locale = useLocale();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -26,11 +29,13 @@ export default function Contact() {
   const [status, setStatus] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
+  // Form gönderimi için asenkron işleyici
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setStatus("");
 
+    // E-posta doğrulama için regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setStatus(tForm("error_invalid_email"));
@@ -39,6 +44,7 @@ export default function Contact() {
     }
 
     try {
+      // EmailJS ile form verilerini gönder
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -96,15 +102,28 @@ export default function Contact() {
               @begencd
             </a>
           </p>
-          <motion.a
-            href="https://your-cv-url.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg"
-          >
-            {t("cv")}
-          </motion.a>
+          <div className="flex justify-center gap-4 mt-4">
+            {/* View CV Butonu */}
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Link
+                href="/resume"
+                className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg"
+              >
+                <Eye className="mr-2 h-5 w-5" />
+                {t("view_cv")} {/* Çeviri dosyasına eklenecek */}
+              </Link>
+            </motion.div>
+            {/* Download CV Butonu */}
+            <motion.a
+              href={`/resumes/resume_${locale}.md`}
+              download={`Begenç_Daňatarow_Resume_${locale}.md`}
+              whileHover={{ scale: 1.05 }}
+              className="inline-flex items-center px-6 py-3 bg-secondary text-white rounded-lg"
+            >
+              <Download className="mr-2 h-5 w-5" />
+              {t("download_cv")} {/* Çeviri dosyasına eklenecek */}
+            </motion.a>
+          </div>
         </div>
         <motion.form
           initial={{ opacity: 0, y: 20 }}

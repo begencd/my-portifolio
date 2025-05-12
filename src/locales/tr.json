@@ -3,31 +3,33 @@
     "title": "Portföyüme Hoş Geldiniz"
   },
   "Header": {
-    "skills": "Yetenekler",
+    "skills": "Beceriler",
     "contact": "İletişim",
-    "toggleMenu": "Menüyü aç/kapat"
+    "toggleMenu": "Menüyü Aç/Kapa"
   },
   "Footer": {
     "rights": "Tüm hakları saklıdır."
   },
   "Hero": {
-    "title": "Merhaba, Ben Begenç D.",
-    "description": "Modern web uygulamaları geliştiren, 2+ yıl deneyimli tutkulu bir Front End Geliştirici.",
+    "title": "Merhaba, Ben Begenç Daňatarow.",
+    "description": "2+ yıllık deneyimle modern web uygulamaları geliştiren tutkulu bir Front End Geliştiriciyim.",
     "cta": "İletişime Geç"
   },
   "Skills": {
-    "title": "Yeteneklerim"
+    "title": "Becerilerim"
   },
   "Contact": {
-    "title": "Benimle İletişime Geç",
+    "title": "Bana Ulaş",
     "email": "E-posta",
     "github": "GitHub",
     "telegram": "Telegram",
-    "cv": "CV İndir",
+    "cv": "CV’yi İndir",
+    "view_cv": "CV’yi Görüntüle",
+    "download_cv": "CV’yi İndir",
     "name": "Adınız",
     "message": "Mesajınız",
     "send": "Mesaj Gönder",
-    "success": "Mesaj başarıyla gönderildi!",
+    "success": "Mesajınız başarıyla gönderildi!",
     "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin."
   },
   "ContactForm": {
@@ -40,12 +42,11 @@
     "message_placeholder": "Mesajınızı girin",
     "send": "Gönder",
     "sending": "Gönderiliyor...",
-    "cv": "CV’yi Görüntüle",
     "success": "Mesajınız başarıyla gönderildi!",
     "error": "Hata: Mesaj gönderilemedi.",
     "error_invalid_email": "Hata: Lütfen geçerli bir e-posta adresi girin."
   },
   "LanguageSwitcher": {
-    "selectLanguage": "Dil Seç"
+    "selectLanguage": "Dil Seçin"
   }
 }

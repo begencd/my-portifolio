@@ -11,7 +11,7 @@
     "rights": "All rights reserved."
   },
   "Hero": {
-    "title": "Hi, I'm Begenç D.",
+    "title": "Hi, I'm Begench Danatarow",
     "description": "A passionate Front End Developer with 2+ years of experience building modern web applications.",
     "cta": "Get in Touch"
   },
@@ -24,6 +24,8 @@
     "github": "GitHub",
     "telegram": "Telegram",
     "cv": "Download CV",
+    "view_cv": "View CV",
+    "download_cv": "Download CV",
     "name": "Your Name",
     "message": "Your Message",
     "send": "Send Message",
@@ -40,7 +42,6 @@
     "message_placeholder": "Enter your message",
     "send": "Send",
     "sending": "Sending...",
-    "cv": "View CV",
     "success": "Your message has been sent successfully!",
     "error": "Error: Unable to send message.",
     "error_invalid_email": "Error: Please enter a valid email address."

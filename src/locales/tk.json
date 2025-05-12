@@ -1,11 +1,11 @@
 {
   "Home": {
-    "title": "Portfolimä Hoş Geldiňiz"
+    "title": "Meniň Portfelime Hoş Geldiňiz"
   },
   "Header": {
-    "skills": "Ustalyklarym",
-    "contact": "Habarlaşyň",
-    "toggleMenu": "Menýu aç/ýap"
+    "skills": "Başarnyklarym",
+    "contact": "Habarlaşmak",
+    "toggleMenu": "Menuni Aç/Ýap"
   },
   "Footer": {
     "rights": "Ähli hukular goragly."
@@ -16,36 +16,37 @@
     "cta": "Habarlaşyň"
   },
   "Skills": {
-    "title": "Ustalyklarym"
+    "title": "Meniň başarnyklarym"
   },
   "Contact": {
     "title": "Men bilen Habarlaşyň",
     "email": "E-poçta",
     "github": "GitHub",
     "telegram": "Telegram",
-    "cv": "CV Ýükle",
+    "cv": "CV’mi Ýükle",
+    "view_cv": "CV’mi Gör",
+    "download_cv": "CV’mi Ýükle",
     "name": "Adyňyz",
     "message": "Habaryňyz",
-    "send": "Habar IBER",
-    "success": "Habar ugradyldy!",
-    "error": "Habar ibermek başa barmady. Gaýtadan synanyşyň."
+    "send": "Habar iber",
+    "success": "Habaryňyz üstünlikli iberrildi!",
+    "error": "Habar iberilmedi. Gaýtadan synanyşyň."
   },
   "ContactForm": {
     "title": "Habarlaşmak",
-    "name": "At",
-    "name_placeholder": "Adyňyzy giriň",
+    "name": "Ady",
+    "name_placeholder": "Adyňyzy ýazyň",
     "email": "E-poçta",
-    "email_placeholder": "E-poçtaňyzy giriň",
-    "message": "Hat",
-    "message_placeholder": "Hat giriň",
+    "email_placeholder": "E-poçtaňyzy ýazyň",
+    "message": "Habar",
+    "message_placeholder": "Habaryňyzy ýazyň",
     "send": "Iber",
     "sending": "Iberilýär...",
-    "cv": "CV-ni gör",
-    "success": "Hatyňyz üstünlikli iberildi!",
-    "error": "Ýalňyşlyk: Hat ibermedi.",
-    "error_invalid_email": "Ýalňyşlyk: Dogry e-poçta adresini giriň."
+    "success": "Habaryňyz üstünlikli iberrildi!",
+    "error": "Ýalňyşlyk: Habar iberilmedi.",
+    "error_invalid_email": "Ýalňyşlyk: Dogry e-poçta adresini ýazyň."
   },
   "LanguageSwitcher": {
-    "selectLanguage": "Dil Saýla"
+    "selectLanguage": "Dil Saýlaň"
   }
 }
