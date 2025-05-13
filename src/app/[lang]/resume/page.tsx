@@ -59,7 +59,7 @@ export default function ResumePage() {
 
   return (
     <div className="max-w-4xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
-      <div className="prose prose-lg dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-a:text-blue-700 dark:prose-a:text-blue-300 prose-strong:font-bold prose-ul:list-disc prose-ol:list-decimal prose-li:pl-4 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 dark:prose-blockquote:border-gray-700 prose-blockquote:p-4 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900/20">
+      <div className="prose prose-md dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-a:text-blue-700 dark:prose-a:text-blue-300 prose-strong:font-bold prose-ul:list-disc prose-ol:list-decimal prose-li:pl-4 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 dark:prose-blockquote:border-gray-700 prose-blockquote:p-4 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900/20">
         <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
           {markdownContent}
         </ReactMarkdown>
